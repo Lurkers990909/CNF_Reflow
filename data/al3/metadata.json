@@ -1,0 +1,110 @@
+{
+  "num_atoms": 33,
+  "torsion_atom_indices": [
+    [
+      6,
+      12,
+      14,
+      16
+    ],
+    [
+      0,
+      4,
+      6,
+      12
+    ],
+    [
+      16,
+      22,
+      24,
+      26
+    ],
+    [
+      12,
+      14,
+      16,
+      22
+    ]
+  ],
+  "topology_pdb": "topology.pdb",
+  "forcefield_files": [
+    "amber14-all.xml",
+    "implicit/obc1.xml"
+  ],
+  "nonbonded_method": "CutoffNonPeriodic",
+  "nonbonded_cutoff_nm": 2.0,
+  "temperature_kelvin": 310.0,
+  "coordinate_unit": "nanometer",
+  "atom_masses": [
+    14.00672,
+    1.007947,
+    1.007947,
+    1.007947,
+    12.01078,
+    1.007947,
+    12.01078,
+    15.99943,
+    12.01078,
+    1.007947,
+    1.007947,
+    1.007947,
+    14.00672,
+    1.007947,
+    12.01078,
+    1.007947,
+    12.01078,
+    15.99943,
+    12.01078,
+    1.007947,
+    1.007947,
+    1.007947,
+    14.00672,
+    1.007947,
+    12.01078,
+    1.007947,
+    12.01078,
+    15.99943,
+    12.01078,
+    1.007947,
+    1.007947,
+    1.007947,
+    15.99943
+  ],
+  "sequence": "AAA",
+  "source_provider": "huggingface",
+  "source_dataset": "transferable-samplers/sequential-boltzmann-generators-data",
+  "source_remote_name": "AAA_310K",
+  "source_urls": [
+    "https://huggingface.co/datasets/transferable-samplers/sequential-boltzmann-generators-data",
+    "https://arxiv.org/abs/2502.18462"
+  ],
+  "split_summary": {
+    "train": {
+      "num_frames": 100000,
+      "shape": [
+        100000,
+        33,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "val": {
+      "num_frames": 20000,
+      "shape": [
+        20000,
+        33,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "test": {
+      "num_frames": 180000,
+      "shape": [
+        180000,
+        33,
+        3
+      ],
+      "dtype": "float64"
+    }
+  }
+}
